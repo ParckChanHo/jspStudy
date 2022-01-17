@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 실전 JSP (renew ver.) - 신입 프로그래머를 위한 강좌 : form 데이터 처리 -->
+	
+	<form action="mSignUp" method="post">
+	<!-- @WebServlet("/mSignUp") 
+		MemSignUp.java 파일이 실행이 되면 
+		http://localhost:8090/lec08Pjt001/mSignUp 이렇게 된다.
+		formEx.html이 실행이 되면 http://localhost:8080/lec08Pjt001/formEx.html 이 되기 때문에 html이 아닌 Servlet 파일도 가능하다.
+	-->
+		name : <input type="text" name="m_name"> </br>
+		password : <input type="password" name="m_pass"></br>
+		gender : Man<input type="radio" name="m_gender" value="M" checked="checked">, Woman<input type="radio" name="m_gender" value="W"></br>
+		hobby : Sport<input type="checkbox" name="m_hobby" value="sport">, 
+				Cooking<input type="checkbox" name="m_hobby" value="cooking">, 
+				Reading<input type="checkbox" name="m_hobby" value="reading">,
+				Travel<input type="checkbox" name="m_hobby" value="travel"></br>
+		residence : <select name="m_residence">
+						<option value="seoul" selected="selected">Seoul</option>
+						<option value="gyeonggi">Gyeonggi</option>
+						<option value="chungcheong">Chungcheong</option>
+						<option value="jeonra">Jeonra</option>
+						<option value="jeju">Jeju</option>
+						<option value="gyeongsang">Gyeongsang</option>
+						<option value="gangwon">Gangwon</option>
+					</select></br>
+					<input type="submit" value="sign up">
+	</form>
+
+</body>
+</html>
